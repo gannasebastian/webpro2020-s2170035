@@ -5,7 +5,7 @@
 
 //1. Array
 
-const colors = ["Merah", "Kuning", "Hijau"];
+// const colors = ["Merah", "Kuning", "Hijau"];
 //Cara Lama
 // let satu = colors[0];
 // let dua = colors[1];
@@ -20,8 +20,8 @@ const colors = ["Merah", "Kuning", "Hijau"];
 // console.log(satu, tiga);
 
 //Plus one
-let [satu, dua, tiga, empat="Biru"] = colors;
-console.log(satu, dua, tiga, empat);
+// let [satu, dua, tiga, empat="Biru"] = colors;
+// console.log(satu, dua, tiga, empat);
 
 //2. Object
 const user = {
@@ -51,12 +51,18 @@ display(user);
 
 //3. Array Object
 
-const users = [
-    {id:1, name: "Sebastian"},
-    {id:2, name: "Kenny"},
-    {id:3, name: "Dasril"},
-];
-let [user1, user2, user3] = users;
-console.log(user1, user2, user3);
+// const users = [
+//     {id:1, name: "Sebastian"},
+//     {id:2, name: "Kenny"},
+//     {id:3, name: "Dasril"},
+// ];
+// let [user1, user2, user3] = users;
+// console.log(user1, user2, user3);
 
 //4. Kombinasi dengan Rest Operator
+
+const colors = ["Merah","Kuning","Hijau","Biru"];
+
+let [satu, ...lainnya] = colors;
+console.log(satu);
+console.log(lainnya)
